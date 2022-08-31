@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  tasks:
+    - name: working task
+      debug:
+        msg: "This task works fine"
+    - name: broken task
+      fail:
+        msg: "This fails totally on purpose i swear"
+...
